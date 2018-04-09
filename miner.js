@@ -17,12 +17,12 @@ function start(){
     isStarted = true;
     timer = setInterval(getData, 100);
 
-    update("toggle","Stop mining");
+    update("toggle","Stop");
   }else{
     miner.stop();
     isStarted = false;
     clearInterval(timer);
-    update("toggle","Start mining");
+    update("toggle","Start");
   }
 }
 
