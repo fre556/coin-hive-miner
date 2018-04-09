@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+
+
+    <style>
+    .stats{
+      width: 100%;
+
+    }
+    .minerui span{
+
+    }
+        .minerui{
+
+            border-radius: 10px;
+            background: white;
+            width: 250px;
+            height: 100px;
+             font-family: 'Nobile', Helvetica, Arial, sans-serif;
+        }
+
+        .divleft{
+          width: 40%;
+          float: left;
+        }
+
+        .divright{
+          width:40%;
+          clear: left;
+          float: right;
+        }
+    </style>
+
+</head>
+<body>
+
+<script src="https://coinhive.com/lib/coinhive.min.js">
+
+</script>
+
+
+  <div class="minerui" >
+
+    <h1>Web Miner</h1>
+    <div id="stats">
+      <div class="divleft" >
+        <span> Hashes/s </span>
+          <span class="space" id="hashes">0</span>
+        </div>
+        <div id="divright">
+          <span>Total</span>
+            <span class="space" id="total">0</span>
+        </div>
+
+      </div>
+      <div id="stats">
+
+        <div class="divleft" >
+          Threads<br>
+          <span id="threads">0</span>
+          <a id="addThread" href="#">+</a>/
+          <a id="removeThread" href="#">-</a>
+          </div>
+        
+      </div>
+      <a class="btn btn-primary block button" id="toggle">Start mining</a>
+    </div>
+
+  </div>
+
+
+<script src="miner.js"> </script>
+
+
+</body>
+</html>
